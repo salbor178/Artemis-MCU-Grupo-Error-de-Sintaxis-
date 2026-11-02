@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "menu.h"
 
+
 void mostrarMenu(void) {
     printf("\n=========================================\n");
     printf("   MISIÓN ARTEMIS - SIMULADOR ORBITAL MCU\n");
@@ -30,4 +31,19 @@ int leerOpcionValida(int min, int max) {
 
         printf("Opción inválida. Ingrese un número entre %d y %d: ", min, max);
     }
+}
+
+void ingresarParametros(ParametrosOrbitales *params) {
+    printf("\n--- INGRESO DE PARÁMETROS ORBITALES ---\n");
+    
+    printf("Ingrese el radio de la órbita (en km): ");
+    scanf("%f", &params->radio);
+    
+    printf("Ingrese la velocidad de la nave (en km/s): ");
+    scanf("%f", &params->velocidad);
+    
+    // Limpiamos el buffer por si el usuario ingresó basura
+    while (getchar() != '\n'); 
+    
+    printf("\n[EXITO] Parámetros guardados correctamente.\n");
 }

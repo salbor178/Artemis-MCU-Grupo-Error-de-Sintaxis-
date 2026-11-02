@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <windows.h> // Necesario para SetConsoleOutputCP
+#include <windows.h>
 #include "menu.h"
 
 int main(void) {
     int opcion;
+    // Creamos la variable que guardará los datos durante todo el programa
+    ParametrosOrbitales nave = {0.0, 0.0}; 
 
-    // Configurar la consola para que entienda UTF-8
     SetConsoleOutputCP(CP_UTF8);
 
     do {
@@ -14,10 +15,12 @@ int main(void) {
 
         switch (opcion) {
             case 1:
-                printf("\n[En desarrollo] Carga de parámetros...\n");
+                // Le enviamos la dirección de memoria (&) de nuestra variable
+                ingresarParametros(&nave);
                 break;
             case 2:
-                printf("\n[En desarrollo] Cálculo de aceleración centrípeta...\n");
+                // Imprimimos los valores para verificar que se guardaron
+                printf("\n[En desarrollo] Calculando con Radio: %.2f y Vel: %.2f...\n", nave.radio, nave.velocidad);
                 break;
             case 3:
                 printf("\n[En desarrollo] Cálculo de periodo y frecuencia...\n");
