@@ -13,4 +13,7 @@ int leerOpcionValida(int min, int max);
 // 2. Declaramos la función que recibe un puntero (*) al struct
 void ingresarParametros(ParametrosOrbitales *params);
 
+// Declaramos la función para la opción 2 (solo lee datos, no usa puntero)
+void calcularAceleracion(ParametrosOrbitales params);
+
 #endif
