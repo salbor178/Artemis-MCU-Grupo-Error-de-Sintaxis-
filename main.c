@@ -19,8 +19,8 @@ int main(void) {
                 ingresarParametros(&nave);
                 break;
             case 2:
-                // Imprimimos los valores para verificar que se guardaron
-                printf("\n[En desarrollo] Calculando con Radio: %.2f y Vel: %.2f...\n", nave.radio, nave.velocidad);
+                // Le pasamos una copia de los datos (sin el &)
+                calcularAceleracion(nave);
                 break;
             case 3:
                 printf("\n[En desarrollo] Cálculo de periodo y frecuencia...\n");
