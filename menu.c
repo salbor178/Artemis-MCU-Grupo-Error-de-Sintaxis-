@@ -88,3 +88,25 @@ void calcularAceleracion(ParametrosOrbitales params) {
     printf("Fórmula: a_c = v^2 / r\n");
     printf("[RESULTADO] La aceleración centrípeta es de %.4f km/s^2\n", aceleracion);
 }
+
+void calcularPeriodoYFrecuencia(ParametrosOrbitales params) {
+    // Definimos el valor de PI como una constante
+    const float PI = 3.14159265;
+
+    printf("\n--- CÁLCULO DE PERIODO Y FRECUENCIA ---\n");
+
+    // Validación de seguridad: radio y velocidad deben ser mayores a 0
+    if (params.radio <= 0 || params.velocidad <= 0) {
+        printf("[ERROR] Primero debes ingresar un radio y velocidad mayores a 0 en la Opción 1.\n");
+        return;
+    }
+
+    // Cálculos físicos
+    float periodo = (2 * PI * params.radio) / params.velocidad;
+    float frecuencia = 1.0 / periodo;
+
+    printf("Datos actuales -> Radio: %.2f km | Velocidad: %.2f km/s\n", params.radio, params.velocidad);
+    printf("Fórmulas: T = (2 * PI * r) / v  |  f = 1 / T\n");
+    printf("[RESULTADO] Periodo Orbital (T): %.4f segundos\n", periodo);
+    printf("[RESULTADO] Frecuencia (f): %.8f Hz (órbitas por segundo)\n", frecuencia);
+}
