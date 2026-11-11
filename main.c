@@ -23,7 +23,7 @@ int main(void) {
                 calcularAceleracion(nave);
                 break;
             case 3:
-                printf("\n[En desarrollo] Cálculo de periodo y frecuencia...\n");
+                calcularPeriodoYFrecuencia(nave);
                 break;
             case 4:
                 printf("\n[En desarrollo] Simulación de estabilidad...\n");
