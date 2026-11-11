@@ -16,4 +16,7 @@ void ingresarParametros(ParametrosOrbitales *params);
 // Declaramos la función para la opción 2 (solo lee datos, no usa puntero)
 void calcularAceleracion(ParametrosOrbitales params);
 
+// Nueva función para la opción 3
+void calcularPeriodoYFrecuencia(ParametrosOrbitales params);
+
 #endif
