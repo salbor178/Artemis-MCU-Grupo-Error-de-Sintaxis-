@@ -14,7 +14,7 @@ void mostrarMenu(void) {
     printf("6. Salir\n");
     printf("=========================================\n");
     printf("Seleccione una opción: ");
-}¡
+}
 
 int leerOpcionValida(int min, int max) {
     int opcion;
