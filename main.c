@@ -29,10 +29,12 @@ int main(void) {
                 evaluarEstabilidad(nave);
                 break;
             case 5:
-                printf("\nCerrando simulador Artemis. Misión finalizada.\n");
+                simularPropulsorLateral();
                 break;
+            case 6:
+                printf("Saliendo del Simulador Artemis... ¡Buen viaje!\n");
+                break;
+            default:
+                printf("[ERROR] Opción no válida. Ingrese un número del 1 al 6.\n");
         }
-    } while (opcion != 5);
-
-    return 0;
-}
+    } while (opcion != 6);

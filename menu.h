@@ -21,4 +21,6 @@ void calcularPeriodoYFrecuencia(ParametrosOrbitales params);
 
 void evaluarEstabilidad(ParametrosOrbitales params);
 
+void simularPropulsorLateral();
+
 #endif

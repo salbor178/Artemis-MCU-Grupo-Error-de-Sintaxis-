@@ -141,3 +141,42 @@ void evaluarEstabilidad(ParametrosOrbitales params) {
         printf("[DIAGNÓSTICO] PELIGRO CRÍTICO: Fuerza G estructuralmente letal. Misión abortada.\n");
     }
 }
+
+void simularPropulsorLateral() {
+    float aceleracion_lat, tiempo;
+    int resultado;
+
+    printf("\n--- SIMULACIÓN DE PROPULSOR AUXILIAR LATERAL ---\n");
+    printf("Teoría: Un pulso perpendicular a la velocidad orbital altera el plano de la órbita (Movimiento 3D).\n");
+
+    // Validación para la aceleración lateral
+    while(1) {
+        printf("Ingrese la aceleración lateral (en m/s^2) [Ej. 0.50]: ");
+        resultado = scanf("%f", &aceleracion_lat);
+        while (getchar() != '\n'); // Limpieza del buffer
+        
+        if (resultado == 1 && aceleracion_lat > 0) {
+            break;
+        }
+        printf("[ERROR] Valor no compatible. Ingrese un número mayor a 0.\n");
+    }
+
+    // Validación para el tiempo de encendido
+    while(1) {
+        printf("Ingrese el tiempo de encendido (en segundos) [Ej. 10.0]: ");
+        resultado = scanf("%f", &tiempo);
+        while (getchar() != '\n'); // Limpieza del buffer
+        
+        if (resultado == 1 && tiempo > 0) {
+            break;
+        }
+        printf("[ERROR] Valor no compatible. Ingrese un tiempo numérico mayor a 0.\n");
+    }
+
+    // Cálculo físico de cinemática: Desplazamiento d = 0.5 * a * t^2
+    float desviacion_metros = 0.5 * aceleracion_lat * (tiempo * tiempo);
+
+    printf("\n[TRAYECTORIA] La trayectoria resultante adopta una forma helicoidal temporal, ");
+    printf("generando una inclinación o cambio en el plano orbital original de la nave.\n");
+    printf("[RESULTADO] La desviación lateral instantánea es de %.2f metros.\n", desviacion_metros);
+}
