@@ -49,3 +49,27 @@ En la misma terminal en la carpeta raíz del proyecto, ejecuta el siguiente coma
 ```bash
 .\Artemis.exe
 ```
+
+## 🤖 Registro de Uso de Inteligencia Artificial (IA)
+
+Para el desarrollo de este Trabajo Práctico Integrador, el equipo utilizó **Gemini** como asistente de aprendizaje, depuración de código y estructuración del proyecto. A continuación, se detalla el uso ético y crítico de la herramienta, cumpliendo con los lineamientos de la cátedra:
+
+### 1. Resolución de Errores en la Validación de Entradas (Buffer)
+*   **Tarea específica:** Evitar que el programa entrara en un bucle infinito cuando el usuario ingresaba letras en lugar de números en el `scanf`.
+*   **Prompt utilizado:** *"explicame con mas detalle la linea 25 y 26 (`while (getchar() != '\n');` e `if (resultado == 1 && opcion >= min && opcion <= max)`)"*
+*   **Validación y Adaptación:** La IA explicó el concepto del buffer de teclado (`stdin`) en C. El equipo validó la explicación probando el código y adaptó el bucle `while (getchar() != '\n');` en todas las funciones de ingreso de datos (`menu.c`) para asegurar que el programa no sufra cierres inesperados (segfaults) ni bucles.
+
+### 2. Comprensión de Punteros y Gestión de Memoria
+*   **Tarea específica:** Entender correctamente el paso de parámetros por referencia para modificar una estructura (`struct`) desde una función modularizada.
+*   **Prompt utilizado:** *"esa funcion cuando en el argumento empieza la variable con un * significa que recibe una direccion de memoria cierto? (`void ingresarParametros(ParametrosOrbitales *params)`)"*
+*   **Validación y Adaptación:** Se confirmó el marco teórico sobre punteros. El equipo decidió aplicar el paso por referencia **solo** en la función de carga de datos, mientras que para las funciones de cálculo (Opciones 2, 3, 4 y 5) se utilizó el paso por valor, ya que solo se necesitaba leer los datos, protegiendo así la memoria original.
+
+### 3. Implementación de Fórmulas Físicas (Fuerza G y Propulsor Lateral)
+*   **Tarea específica:** Trasladar las fórmulas físicas del Escenario 2 (MCU y MRUV) al lenguaje C para las opciones 4 y 5.
+*   **Prompt utilizado:** *"ahora la implementacion de la funcion 4"* y *"que paso con el item d? desarrolla la funcion nueva"*
+*   **Validación y Adaptación:** La IA generó la base matemática (ej. cálculo de $d = 0.5 \cdot a \cdot t^2$ para el propulsor lateral). El equipo revisó matemáticamente las fórmulas, ajustó las constantes (como la gravedad terrestre) y adaptó los condicionales `if-else` para personalizar los mensajes de diagnóstico de la misión Artemis que se muestran por consola.
+
+### 4. Organización del Repositorio y Control de Versiones
+*   **Tarea específica:** Buscar una estrategia para versionar el código localmente de forma colaborativa sin que Windows arroje el error de "ruta demasiado larga" por anidamiento de carpetas.
+*   **Prompt utilizado:** *"como podria organizar commits localmente con sus archivos y sus modificaciones unicas correspondientes de otra manera para evitar el error de ruta larga en Windows?"*
+*   **Validación y Adaptación:** Se implementó la sugerencia de usar una estructura de carpetas plana con nomenclatura secuencial (`AñoMesDia_Hora_Descripción`). Esto permitió a los distintos miembros del grupo simular las versiones locales, pasarse el código limpio y realizar commits equitativos en GitHub para reflejar un trabajo realmente colaborativo.
