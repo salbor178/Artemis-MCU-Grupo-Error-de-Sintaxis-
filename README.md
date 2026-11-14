@@ -6,9 +6,9 @@
 **Institución:** UTN - Facultad Regional Resistencia  
 
 ##  Integrantes del Equipo
-*   Albornoz Alejandro Sebastian - 30350
-*   Bogado Sharon Tatiana - [Legajo]
-*   Korovaichuk Dilan Lautaro- [30439]
+*   Albornoz, Alejandro Sebastian - 30350
+*   Bogado, Sharon Tatiana - [30213]
+*   Korovaichuk, Dilan Lautaro- [30439]
 
 
 ##  Descripción del Proyecto
