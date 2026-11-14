@@ -63,13 +63,3 @@ Para el desarrollo de este Trabajo Práctico Integrador, el equipo utilizó **Ge
 *   **Tarea específica:** Comprender correctamente el paso de parámetros por referencia para modificar una estructura (`struct`) desde una función modularizada.
 *   **Prompt utilizado:** *"Consulta conceptual sobre la gestión de memoria en C: análisis y confirmación del comportamiento del paso de parámetros por referencia mediante el uso de punteros (ej. `*params`) en la firma de una función."*
 *   **Validación y Adaptación:** Se confirmó el marco teórico sobre punteros. El equipo decidió aplicar el paso por referencia **solo** en la función de carga de datos iniciales. En contraste, para las funciones de cálculo (Opciones 2, 3, 4 y 5) se utilizó el paso por valor para proteger la estructura original en memoria, ya que solo se requería su lectura.
-
-### 3. Implementación de Fórmulas Físicas (Fuerza G y Propulsor Lateral)
-*   **Tarea específica:** Trasladar los modelos físicos del Escenario 2 (Fuerza G y cinemática del MRUV) a la sintaxis del lenguaje C para las opciones 4 y 5.
-*   **Prompt utilizado:** *"Petición de asistencia técnica para estructurar algorítmicamente las fórmulas matemáticas de evaluación de estabilidad orbital y calcular la desviación lateral de la trayectoria en base a los datos del MCU."*
-*   **Validación y Adaptación:** La IA generó la base matemática del código. El equipo revisó las fórmulas, ajustó las constantes físicas (como la conversión de la gravedad terrestre a km/s²) y programó los bloques `if-else` para personalizar los diagnósticos y advertencias de la misión Artemis.
-
-### 4. Organización del Repositorio y Control de Versiones
-*   **Tarea específica:** Definir una estrategia para versionar el código localmente de forma secuencial sin que Windows arrojara errores por "ruta demasiado larga" al anidar carpetas.
-*   **Prompt utilizado:** *"Solicitud de estrategias o metodologías para la gestión local de versiones de código, buscando alternativas eficientes para organizar modificaciones únicas y mantener el orden cronológico sin exceder los límites de longitud de directorios en Windows."*
-*   **Validación y Adaptación:** Se implementó la sugerencia de utilizar una estructura de directorios plana con nomenclatura temporal (`AñoMesDia_Hora_Descripción`). Esto facilitó el intercambio de versiones entre los miembros del equipo, permitiendo realizar *commits* equitativos y asíncronos en GitHub para cumplir con el requisito de trabajo colaborativo.
