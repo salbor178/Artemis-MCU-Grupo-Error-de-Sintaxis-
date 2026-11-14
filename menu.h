@@ -19,4 +19,6 @@ void calcularAceleracion(ParametrosOrbitales params);
 // Nueva función para la opción 3
 void calcularPeriodoYFrecuencia(ParametrosOrbitales params);
 
+void evaluarEstabilidad(ParametrosOrbitales params);
+
 #endif
