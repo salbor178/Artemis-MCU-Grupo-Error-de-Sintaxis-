@@ -26,7 +26,7 @@ int main(void) {
                 calcularPeriodoYFrecuencia(nave);
                 break;
             case 4:
-                printf("\n[En desarrollo] Simulación de estabilidad...\n");
+                evaluarEstabilidad(nave);
                 break;
             case 5:
                 printf("\nCerrando simulador Artemis. Misión finalizada.\n");
