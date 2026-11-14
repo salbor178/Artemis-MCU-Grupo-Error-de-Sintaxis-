@@ -1,4 +1,5 @@
-<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/45e9712c-252e-4b85-b6c4-121013e4da39" />
+<img width="735" height="490" alt="image" src="https://github.com/user-attachments/assets/af497fc5-e671-4a77-a3bf-b36e1316bb7c" />
+
 
 
 # Artemis-MCU-Grupo-Error de Sintaxis
