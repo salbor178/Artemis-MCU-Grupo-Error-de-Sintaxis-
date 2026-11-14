@@ -25,7 +25,8 @@ El programa cuenta con un menú interactivo con validación estricta de datos qu
 ##  Diagrama de flujo del Simulador
 A continuación, se detalla el flujo de ejecución del menú principal, las validaciones de entrada y las ramificaciones lógicas de la simulación:
 
-![Diagrama de Flujo del Simulador Artemis](diagrama.png)
+<img width="2746" height="1965" alt="image" src="https://github.com/user-attachments/assets/92b6a115-1596-4e15-82a1-d27ee6901c97" />
+
 
 
 ##  Estructura del Código (Modularización)
