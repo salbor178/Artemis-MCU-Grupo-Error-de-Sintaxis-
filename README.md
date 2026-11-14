@@ -8,7 +8,7 @@
 ##  Integrantes del Equipo
 *   Albornoz Alejandro Sebastian - 30350
 *   Bogado Sharon Tatiana - [Legajo]
-*   Dylan Lautaro Korovaichuk - [Legajo]
+*   Korovaichuk Dilan Lautaro- [30439]
 
 
 ##  Descripción del Proyecto
