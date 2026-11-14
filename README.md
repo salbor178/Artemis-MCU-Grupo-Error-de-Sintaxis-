@@ -12,12 +12,12 @@
 
 
 ##  Descripción del Proyecto
-Este proyecto es un simulador interactivo por consola desarrollado nativamente en lenguaje C. Resuelve la **Situación Problemática 2 (Movimiento Circular Uniforme)** de la misión aeroespacial Artemis. El sistema permite ingresar los parámetros de vuelo de una nave orbitando la Luna y calcula sus variables físicas fundamentales, diagnosticando si las condiciones son seguras para la tripulación.
+Este proyecto es un simulador interactivo por consola desarrollado nativamente en lenguaje C. Resuelve la Situación Problemática 2 (Movimiento Circular Uniforme) de la misión aeroespacial Artemis. El sistema permite ingresar los parámetros de vuelo de una nave en órbita terrestre baja (LEO) y calcula sus variables físicas fundamentales, diagnosticando si las condiciones son seguras para la tripulación.
 
 ##  Funcionalidades del Simulador
 El programa cuenta con un menú interactivo con validación estricta de datos que permite:
 1. **Ingreso de parámetros orbitales:** Captura de radio (km) y velocidad (km/s).
-2. **Cálculo de Aceleración Centrípeta:** Aplica la fórmula $a_c = v^2 / r$.
+2. **Cálculo de Aceleración Centrípeta:** Aplica la fórmula a_c = v^2 / r.
 3. **Cálculo de Periodo y Frecuencia:** Determina el tiempo por órbita y los ciclos por segundo (Hz).
 4. **Evaluación de Estabilidad (Fuerza G):** Compara la aceleración de la nave con la gravedad terrestre e imprime un diagnóstico de seguridad para los astronautas.
 
@@ -35,3 +35,10 @@ Para ejecutar este simulador en Windows, es necesario contar con el compilador G
 Abre una terminal en la carpeta raíz del proyecto y ejecuta el siguiente comando para vincular y compilar todos los archivos fuente:
 ```bash
 gcc *.c -o Artemis.exe
+```
+
+**2. Ejecutar el proyecto:**
+En la misma terminal en la carpeta raíz del proyecto, ejecuta el siguiente comando para iniciar el proyecto:
+```bash
+.\Artemis.exe
+```
