@@ -5,7 +5,7 @@
 **Carrera:** Ingeniería en Sistemas de Información  
 **Institución:** UTN - Facultad Regional Resistencia  
 
-##  Integrantes del Equipo
+##  Integrantes del Equipo - Comision: k1.4 ( D )
 *   Albornoz, Alejandro Sebastian - 30350
 *   Bogado, Sharon Tatiana - [30213]
 *   Korovaichuk, Dilan Lautaro- [30439]
