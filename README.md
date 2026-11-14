@@ -17,10 +17,10 @@ Este proyecto es un simulador interactivo por consola desarrollado nativamente e
 ##  Funcionalidades del Simulador
 El programa cuenta con un menú interactivo con validación estricta de datos que permite:
 1. **Ingreso de parámetros orbitales:** Captura de radio (km) y velocidad (km/s).
-2. **Cálculo de Aceleración Centrípeta:** Aplica la fórmula a_c = v^2 / r.
+2. **Cálculo de Aceleración Centrípeta:** Aplica la fórmula $a_c = v^2 / r$.
 3. **Cálculo de Periodo y Frecuencia:** Determina el tiempo por órbita y los ciclos por segundo (Hz).
 4. **Evaluación de Estabilidad (Fuerza G):** Compara la aceleración de la nave con la gravedad terrestre e imprime un diagnóstico de seguridad para los astronautas.
-5. 
+5. **Simulación de Propulsor Auxiliar Lateral:** Calcula la desviación lateral instantánea y el cambio de trayectoria tras el encendido de un motor perpendicular a la órbita.
 
 ##  Diagrama de flujo del Simulador
 A continuación, se detalla el flujo de ejecución del menú principal, las validaciones de entrada y las ramificaciones lógicas de la simulación:
