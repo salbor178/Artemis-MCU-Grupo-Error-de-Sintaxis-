@@ -11,7 +11,7 @@ int main(void) {
 
     do {
         mostrarMenu();
-        opcion = leerOpcionValida(1, 5);
+        opcion = leerOpcionValida(1, 6);
 
         switch (opcion) {
             case 1:
@@ -38,3 +38,4 @@ int main(void) {
                 printf("[ERROR] Opción no válida. Ingrese un número del 1 al 6.\n");
         }
     } while (opcion != 6);
+}

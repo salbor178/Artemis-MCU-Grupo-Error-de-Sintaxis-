@@ -10,10 +10,11 @@ void mostrarMenu(void) {
     printf("2. Calcular Aceleración Centrípeta\n");
     printf("3. Calcular Periodo y Frecuencia de Órbita\n");
     printf("4. Evaluar Estabilidad de Órbita (Fuerza G)\n");
-    printf("5. Salir\n");
+    printf("5. Simular Propulsor Auxiliar Lateral\n");
+    printf("6. Salir\n");
     printf("=========================================\n");
     printf("Seleccione una opción: ");
-}
+}¡
 
 int leerOpcionValida(int min, int max) {
     int opcion;
