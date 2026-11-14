@@ -50,7 +50,7 @@ En la misma terminal en la carpeta raíz del proyecto, ejecuta el siguiente coma
 .\Artemis.exe
 ```
 
-## 🤖 Registro de Uso de Inteligencia Artificial (IA)
+## Registro de Uso de Inteligencia Artificial (IA)
 
 Para el desarrollo de este Trabajo Práctico Integrador, el equipo utilizó **Gemini** como asistente de aprendizaje, depuración de código y estructuración del proyecto. A continuación, se detalla el uso ético y crítico de la herramienta, cumpliendo con los lineamientos de la cátedra:
 
