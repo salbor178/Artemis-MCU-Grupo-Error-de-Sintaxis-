@@ -110,3 +110,34 @@ void calcularPeriodoYFrecuencia(ParametrosOrbitales params) {
     printf("[RESULTADO] Periodo Orbital (T): %.4f segundos\n", periodo);
     printf("[RESULTADO] Frecuencia (f): %.8f Hz (órbitas por segundo)\n", frecuencia);
 }
+
+void evaluarEstabilidad(ParametrosOrbitales params) {
+    printf("\n--- EVALUACIÓN DE ESTABILIDAD (FUERZA G) ---\n");
+
+    // Validación de seguridad para evitar divisiones por cero
+    if (params.radio <= 0) {
+        printf("[ERROR] Primero debes ingresar un radio mayor a 0 en la Opción 1.\n");
+        return; // Retorna inmediatamente al menú principal
+    }
+
+    // 1. Calculamos la aceleración centrípeta (v^2 / r)
+    float aceleracion = (params.velocidad * params.velocidad) / params.radio;
+
+    // 2. Definimos la gravedad terrestre en km/s^2 constante
+    const float GRAVEDAD_TERRESTRE = 0.00981;
+
+    // 3. Calculamos la Fuerza G dividiendo la aceleración por la gravedad
+    float fuerza_g = aceleracion / GRAVEDAD_TERRESTRE;
+
+    printf("Aceleración centrípeta detectada: %.4f km/s^2\n", aceleracion);
+    printf("[RESULTADO] Fuerza G experimentada por la nave: %.2f G\n", fuerza_g);
+
+    // 4. Simulamos el diagnóstico médico/físico de la misión
+    if (fuerza_g <= 3.0) {
+        printf("[DIAGNÓSTICO] Órbita estable. Condiciones seguras para los astronautas de Artemis.\n");
+    } else if (fuerza_g <= 8.0) {
+        printf("[DIAGNÓSTICO] ADVERTENCIA: Órbita inestable. Fuerza G muy elevada. Riesgo de desmayo (G-LOC).\n");
+    } else {
+        printf("[DIAGNÓSTICO] PELIGRO CRÍTICO: Fuerza G estructuralmente letal. Misión abortada.\n");
+    }
+}
