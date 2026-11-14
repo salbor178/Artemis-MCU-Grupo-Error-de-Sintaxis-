@@ -20,6 +20,13 @@ El programa cuenta con un menú interactivo con validación estricta de datos qu
 2. **Cálculo de Aceleración Centrípeta:** Aplica la fórmula a_c = v^2 / r.
 3. **Cálculo de Periodo y Frecuencia:** Determina el tiempo por órbita y los ciclos por segundo (Hz).
 4. **Evaluación de Estabilidad (Fuerza G):** Compara la aceleración de la nave con la gravedad terrestre e imprime un diagnóstico de seguridad para los astronautas.
+5. 
+
+##  Diagrama de flujo del Simulador
+A continuación, se detalla el flujo de ejecución del menú principal, las validaciones de entrada y las ramificaciones lógicas de la simulación:
+
+![Diagrama de Flujo del Simulador Artemis](diagrama.png)
+
 
 ##  Estructura del Código (Modularización)
 El código fuente cumple con el estándar de desarrollo profesional dividiendo la lógica en tres archivos:
