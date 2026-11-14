@@ -1,3 +1,6 @@
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/45e9712c-252e-4b85-b6c4-121013e4da39" />
+
+
 # Artemis-MCU-Grupo-Error de Sintaxis
 #  Simulador Orbital Artemis - Escenario MCU (Situación 2)
 
